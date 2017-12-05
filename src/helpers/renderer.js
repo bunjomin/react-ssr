@@ -23,7 +23,10 @@ export default (req, store, context) => {
             <head>
                 ${helmet.title.toString()}
                 ${helmet.meta.toString()}
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+                <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700,900" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Oswald:200" rel="stylesheet">
+                <link rel="stylesheet" href="styles/css/styles.css">
+                <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
             </head>
             <body>
                 <div id="root">${content}</div>

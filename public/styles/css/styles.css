@@ -1,0 +1,863 @@
+/* line 15, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font: 100% 'Lato', sans-serif;
+}
+
+/* line 24, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+html a:hover, html button:hover {
+  cursor: pointer;
+}
+
+/* line 30, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+.nav-wrapper {
+  z-index: 1000;
+}
+
+/* line 34, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+textarea {
+  resize: none;
+}
+
+/* line 38, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+.page-contact a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1188px) {
+  /* line 45, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper {
+    background: linear-gradient(45deg, #00bcd4, #00c7e1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  /* line 53, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: ". brand navbuttons";
+    grid-template-columns: 5% 25% 70%;
+    align-items: center;
+  }
+  /* line 61, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container h1 {
+    grid-area: brand;
+    justify-self: center;
+  }
+  /* line 65, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container h1 a {
+    text-decoration: none;
+  }
+  /* line 69, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container h1 h2 {
+    color: #eee;
+    font-size: 200%;
+    align-self: center;
+    display: inline;
+    position: relative;
+    bottom: 10px;
+    left: 5px;
+  }
+  /* line 79, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container h1 img {
+    width: 100px;
+    align-self: center;
+  }
+  /* line 85, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container .nav-buttons {
+    grid-area: navbuttons;
+    justify-self: end;
+  }
+  /* line 89, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container .nav-buttons ul {
+    list-style: none;
+  }
+  /* line 92, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container .nav-buttons ul li {
+    display: inline;
+    padding: 0 60px;
+  }
+  /* line 99, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container .nav-buttons ul [id='1']:before {
+    content: "";
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 21px;
+    width: 30px;
+    height: 18px;
+    background: no-repeat center center url("http://localhost:3000/imgs/003-interface.svg");
+    opacity: 0.6;
+  }
+  /* line 113, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container .nav-buttons ul [id='2']:before {
+    content: "";
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 21px;
+    width: 30px;
+    height: 18px;
+    background: no-repeat center center url("http://localhost:3000/imgs/002-wrench.svg");
+    opacity: 0.6;
+  }
+  /* line 127, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container .nav-buttons ul [id='3']:before {
+    content: "";
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 21px;
+    width: 30px;
+    height: 18px;
+    background: no-repeat center center url("http://localhost:3000/imgs/001-mail.svg");
+    opacity: 0.6;
+  }
+  /* line 139, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container .nav-buttons ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+  }
+  /* line 149, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 155, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio .card-content {
+    margin-top: 30px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #eee;
+    height: 40%;
+    overflow: hidden;
+    padding-bottom: 25px;
+  }
+  /* line 164, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio .card-content h3, .page-portfolio .card-content p {
+    background: none;
+    width: 50%;
+  }
+  /* line 169, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio .card-content h3 {
+    font: 330% 'Lato', sans-serif;
+    font-weight: 100;
+    padding-top: 30px;
+    color: #00bcd4;
+  }
+  /* line 176, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio .card-content p {
+    font: 160% 'Oswald', sans-serif;
+    padding-top: 60px;
+    color: #777;
+  }
+  /* line 183, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #one.card-content {
+    background: no-repeat top right url("http://localhost:3000/imgs/bg_card-one-desaturated.jpg");
+    background-size: cover;
+  }
+  /* line 187, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #one.card-content .img-and-text {
+    text-align: left;
+  }
+  /* line 190, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #one.card-content .img-and-text h3, .page-portfolio #one.card-content .img-and-text p {
+    margin-left: 30px;
+  }
+  /* line 196, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #two.card-content {
+    background: no-repeat top right url("http://localhost:3000/imgs/bg_card-two-desaturated.jpg");
+    background-size: cover;
+  }
+  /* line 200, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #two.card-content .img-and-text {
+    text-align: right;
+    width: 50%;
+    position: relative;
+    float: right;
+    margin-right: 30px;
+  }
+  /* line 207, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #two.card-content .img-and-text h3, .page-portfolio #two.card-content .img-and-text p {
+    width: 100%;
+  }
+  /* line 213, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #three.card-content {
+    background: url("http://localhost:3000/imgs/bg_keyboard-desaturated.jpg");
+    background-size: cover;
+  }
+  /* line 217, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #three.card-content .img-and-text {
+    text-align: left;
+  }
+  /* line 220, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #three.card-content .img-and-text h3, .page-portfolio #three.card-content .img-and-text p {
+    margin-left: 30px;
+  }
+  /* line 224, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #three.card-content .img-and-text a {
+    color: #444;
+    font: 100% 'Oswald', sans-serif;
+    text-decoration: none;
+  }
+  /* line 233, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home {
+    margin: 20% 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 25% 25%;
+    grid-row-gap: 400px;
+    grid-template-areas: "marg-l1 mid1 marg-r1" "marg-l2 mid2 marg-r2" "marg-l3 mid3 marg-r3";
+  }
+  /* line 245, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .intro, .page-home .react-front-end, .page-home .about-me {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+  }
+  /* line 250, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .intro h3, .page-home .intro p, .page-home .react-front-end h3, .page-home .react-front-end p, .page-home .about-me h3, .page-home .about-me p {
+    width: 100%;
+    color: #777;
+  }
+  /* line 255, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .intro h3, .page-home .react-front-end h3, .page-home .about-me h3 {
+    font: 330% 'Lato', sans-serif;
+    font-weight: 100;
+    color: #00bcd4;
+  }
+  /* line 261, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .intro p, .page-home .react-front-end p, .page-home .about-me p {
+    margin-top: 2%;
+    font: 180% 'Oswald', sans-serif;
+  }
+  /* line 267, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .intro {
+    grid-area: mid2;
+  }
+  /* line 271, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .react-front-end {
+    grid-area: mid3;
+  }
+  /* line 275, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .about-me {
+    grid-area: mid1;
+  }
+  /* line 279, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .btn-get-started {
+    grid-area: mid1;
+    margin: auto;
+    position: relative;
+    top: 21vh;
+    left: 8%;
+    width: 20%;
+    padding: 20px 0;
+    background: linear-gradient(45deg, #009688, #4caf50);
+    color: #eee;
+    font: 150% 'Lato', sans-serif;
+    font-weight: 400;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  /* line 294, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .btn-get-started:hover {
+    cursor: pointer;
+  }
+  /* line 299, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .btn-learn-more {
+    grid-area: mid1;
+    margin: auto;
+    position: relative;
+    top: 21vh;
+    left: -8%;
+    width: 20%;
+    padding: 20px 0;
+    background: linear-gradient(-45deg, #4caf50, #009688);
+    color: #eee;
+    font: 150% 'Lato', sans-serif;
+    font-weight: 400;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  /* line 314, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .btn-learn-more:hover {
+    cursor: pointer;
+  }
+  /* line 319, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home img#mountain {
+    grid-area: marg-l3;
+    width: 90%;
+    margin-left: 10%;
+    align-self: center;
+    justify-self: center;
+  }
+  /* line 328, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-services {
+    width: 100%;
+    height: 150%;
+    margin-top: 10%;
+  }
+  /* line 333, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-services .card-serv {
+    width: 55%;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    background-color: #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 60px 30px;
+  }
+  /* line 342, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-services .card-serv h3, .page-services .card-serv p {
+    color: #777;
+  }
+  /* line 346, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-services .card-serv h3 {
+    font: 400% 'Lato', sans-serif;
+    font-weight: 100;
+    color: #00c7e1;
+  }
+  /* line 352, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-services .card-serv p {
+    font: 130% 'Oswald', sans-serif;
+    margin-top: 35px;
+  }
+  /* line 359, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    width: 100%;
+  }
+  /* line 364, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact h3, .page-contact p {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+  }
+  /* line 370, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact h3 {
+    color: #00bcd4;
+    font: 300% 'Lato', sans-serif;
+    font-weight: 100;
+  }
+  /* line 376, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact p {
+    color: #777;
+    font: 140% 'Oswald', sans-serif;
+  }
+  /* line 381, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact form {
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 60px 60px;
+    border-radius: 15px;
+  }
+  /* line 392, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact form input {
+    width: 100%;
+    min-height: 5%;
+    margin: 10px 0;
+    padding: 15px 0;
+  }
+  /* line 399, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact form textarea {
+    min-height: 25%;
+  }
+  /* line 403, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact form .button-sub {
+    margin: auto;
+    margin-top: 25px;
+    width: 50%;
+    padding: 20px 0;
+    background: linear-gradient(45deg, #009688, #4caf50);
+    color: #eee;
+    font: 200% 'Lato', sans-serif;
+    font-weight: 400;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1188px) {
+  /* line 421, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper {
+    background: linear-gradient(45deg, #00bcd4, #00c7e1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  /* line 429, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: ". brand navbuttons";
+    grid-template-columns: 5% 25% 70%;
+    align-items: center;
+  }
+  /* line 437, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container h1 {
+    grid-area: brand;
+    justify-self: center;
+  }
+  /* line 441, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container h1 a {
+    text-decoration: none;
+  }
+  /* line 445, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container h1 h2 {
+    color: #eee;
+    font-size: 200%;
+    align-self: center;
+    display: inline;
+    position: relative;
+    bottom: 10px;
+    left: 5px;
+  }
+  /* line 455, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container h1 img {
+    width: 100px;
+    align-self: center;
+  }
+  /* line 461, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container .nav-buttons {
+    grid-area: navbuttons;
+    justify-self: end;
+  }
+  /* line 465, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container .nav-buttons ul {
+    list-style: none;
+  }
+  /* line 468, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container .nav-buttons ul li {
+    display: inline;
+    padding: 0 60px;
+  }
+  /* line 473, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container .nav-buttons ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+  }
+  /* line 478, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container .nav-buttons ul a::after {
+    content: "";
+    background-color: #fff;
+    height: 10px;
+    width: 0;
+  }
+  /* line 485, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .nav-wrapper .nav-container .nav-buttons ul a:hover::after {
+    width: 100%;
+    height: 10px;
+  }
+  /* line 495, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 501, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio .card-content {
+    margin-top: 30px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #eee;
+    height: 40%;
+    overflow: hidden;
+    padding-bottom: 25px;
+  }
+  /* line 510, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio .card-content h3, .page-portfolio .card-content p {
+    background: none;
+    width: 50%;
+  }
+  /* line 515, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio .card-content h3 {
+    font: 330% 'Lato', sans-serif;
+    font-weight: 100;
+    padding-top: 30px;
+    color: #00bcd4;
+  }
+  /* line 522, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio .card-content p {
+    font: 160% 'Oswald', sans-serif;
+    padding-top: 60px;
+    color: #777;
+  }
+  /* line 529, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #one.card-content {
+    background: no-repeat top right url("http://localhost:3000/imgs/bg_card-one-desaturated.jpg");
+    background-size: cover;
+  }
+  /* line 533, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #one.card-content .img-and-text {
+    text-align: left;
+  }
+  /* line 536, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #one.card-content .img-and-text h3, .page-portfolio #one.card-content .img-and-text p {
+    margin-left: 30px;
+  }
+  /* line 542, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #two.card-content {
+    background: no-repeat top right url("http://localhost:3000/imgs/bg_card-two-desaturated.jpg");
+    background-size: cover;
+  }
+  /* line 546, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #two.card-content .img-and-text {
+    text-align: right;
+    width: 50%;
+    position: relative;
+    float: right;
+    margin-right: 30px;
+  }
+  /* line 553, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #two.card-content .img-and-text h3, .page-portfolio #two.card-content .img-and-text p {
+    width: 100%;
+  }
+  /* line 559, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #three.card-content {
+    background: url("http://localhost:3000/imgs/bg_keyboard-desaturated.jpg");
+    background-size: cover;
+  }
+  /* line 563, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #three.card-content .img-and-text {
+    text-align: left;
+  }
+  /* line 566, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #three.card-content .img-and-text h3, .page-portfolio #three.card-content .img-and-text p {
+    margin-left: 30px;
+  }
+  /* line 570, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-portfolio #three.card-content .img-and-text a {
+    color: #444;
+    font: 100% 'Oswald', sans-serif;
+    text-decoration: none;
+  }
+  /* line 579, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home {
+    margin: 20% 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 25% 25%;
+    grid-row-gap: 400px;
+    grid-template-areas: "marg-l1 mid1 marg-r1" "marg-l2 mid2 marg-r2" "marg-l3 mid3 marg-r3";
+  }
+  /* line 591, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .intro, .page-home .react-front-end, .page-home .about-me {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+  }
+  /* line 596, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .intro h3, .page-home .intro p, .page-home .react-front-end h3, .page-home .react-front-end p, .page-home .about-me h3, .page-home .about-me p {
+    width: 100%;
+    color: #777;
+  }
+  /* line 601, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .intro h3, .page-home .react-front-end h3, .page-home .about-me h3 {
+    font: 330% 'Lato', sans-serif;
+    font-weight: 100;
+    color: #00bcd4;
+  }
+  /* line 607, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .intro p, .page-home .react-front-end p, .page-home .about-me p {
+    margin-top: 2%;
+    font: 180% 'Oswald', sans-serif;
+  }
+  /* line 613, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .intro {
+    grid-area: mid2;
+  }
+  /* line 617, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .react-front-end {
+    grid-area: mid3;
+  }
+  /* line 621, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .about-me {
+    grid-area: mid1;
+  }
+  /* line 626, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .about-me p button {
+    margin-top: 35px;
+    text-align: center;
+    width: 50%;
+    padding: 20px 0;
+    background: linear-gradient(45deg, #009688, #4caf50);
+    color: #eee;
+    font: 150% 'Lato', sans-serif;
+    font-weight: 400;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  /* line 641, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .btn-get-started {
+    grid-area: mid1;
+    margin: auto;
+    position: relative;
+    top: 30vh;
+    left: 20%;
+    width: 45%;
+    padding: 20px 0;
+    background: linear-gradient(45deg, #009688, #4caf50);
+    color: #eee;
+    font: 160% 'Lato', sans-serif;
+    font-weight: 400;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  /* line 657, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .btn-learn-more {
+    grid-area: mid1;
+    margin: auto;
+    position: relative;
+    top: 30vh;
+    left: -20%;
+    width: 45%;
+    padding: 20px 0;
+    background: linear-gradient(45deg, #009688, #4caf50);
+    color: #eee;
+    font: 160% 'Lato', sans-serif;
+    font-weight: 400;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  /* line 673, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home img#mountain {
+    grid-area: marg-l3;
+    width: 90%;
+    margin-left: 10%;
+    align-self: center;
+    justify-self: center;
+  }
+  /* line 682, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-services {
+    width: 100%;
+    height: 150%;
+    margin-top: 10%;
+  }
+  /* line 687, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-services .card-serv {
+    width: 55%;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    background-color: #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 60px 30px;
+  }
+  /* line 696, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-services .card-serv h3, .page-services .card-serv p {
+    color: #777;
+  }
+  /* line 700, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-services .card-serv h3 {
+    font: 400% 'Lato', sans-serif;
+    font-weight: 100;
+    color: #00c7e1;
+  }
+  /* line 706, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-services .card-serv p {
+    font: 130% 'Oswald', sans-serif;
+    margin-top: 35px;
+  }
+  /* line 713, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+  }
+  /* line 718, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact h3, .page-contact p {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+  }
+  /* line 724, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact h3 {
+    color: #00bcd4;
+    font: 300% 'Lato', sans-serif;
+    font-weight: 100;
+  }
+  /* line 730, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact p {
+    color: #777;
+    font: 140% 'Oswald', sans-serif;
+  }
+  /* line 735, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact form {
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 60px 60px;
+    border-radius: 15px;
+  }
+  /* line 746, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact form input {
+    width: 100%;
+    min-height: 5%;
+    margin: 10px 0;
+    padding: 15px 0;
+  }
+  /* line 753, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact form textarea {
+    min-height: 25%;
+  }
+  /* line 757, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-contact form .button-sub {
+    margin: auto;
+    margin-top: 25px;
+    width: 50%;
+    padding: 20px 0;
+    background: linear-gradient(45deg, #009688, #4caf50);
+    color: #eee;
+    font: 200% 'Lato', sans-serif;
+    font-weight: 400;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  /* line 772, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html {
+    font-size: 160%;
+    width: 100%;
+  }
+  /* line 776, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .nav-wrapper {
+    height: 20vh;
+  }
+  /* line 779, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .nav-wrapper .nav-container {
+    grid-template-areas: "brand" "navbuttons";
+    grid-template-columns: 100%;
+  }
+  /* line 785, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .nav-wrapper .nav-container h1 {
+    font-size: 100%;
+  }
+  /* line 790, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .nav-wrapper .nav-container h1 .home-logo img {
+    width: 200px;
+  }
+  /* line 796, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .nav-wrapper .nav-container .nav-buttons {
+    justify-self: center;
+  }
+  /* line 800, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .nav-wrapper .nav-container ul {
+    margin-top: -60px;
+    margin-left: 10px;
+    justify-self: center;
+  }
+  /* line 805, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .nav-wrapper .nav-container ul li {
+    margin: 0;
+    padding: 0 60px;
+    font-size: 120%;
+  }
+  /* line 813, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .nav-wrapper .nav-container ul [id='1']::before, html .nav-wrapper .nav-container ul [id='2']::before, html .nav-wrapper .nav-container ul [id='3']::before {
+    width: 100px;
+    height: 40px;
+    margin-top: 50px;
+  }
+  /* line 823, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-home {
+    margin-top: 40%;
+    width: 100%;
+  }
+  /* line 827, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-home img#mountain {
+    display: none;
+  }
+  /* line 832, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-services {
+    margin-top: 40%;
+  }
+  /* line 835, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-services .card-serv {
+    width: 80%;
+    margin-top: 15%;
+  }
+  /* line 839, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-services .card-serv p {
+    font-size: 180%;
+  }
+  /* line 845, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-portfolio {
+    margin-top: 35%;
+    margin-bottom: 20%;
+    width: 100%;
+  }
+  /* line 850, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-portfolio .card-content#one, html .page-portfolio .card-content#two, html .page-portfolio .card-content#three {
+    height: auto;
+    width: 100%;
+    margin-top: 50px;
+    padding: 30px 0;
+    background: none;
+    background-color: #eee;
+  }
+  /* line 858, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-portfolio .card-content#one .img-and-text, html .page-portfolio .card-content#two .img-and-text, html .page-portfolio .card-content#three .img-and-text {
+    width: 100%;
+    text-align: left;
+    margin-right: 0;
+  }
+  /* line 863, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-portfolio .card-content#one .img-and-text h3, html .page-portfolio .card-content#two .img-and-text h3, html .page-portfolio .card-content#three .img-and-text h3 {
+    font-size: 400%;
+  }
+  /* line 867, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-portfolio .card-content#one .img-and-text h3, html .page-portfolio .card-content#one .img-and-text p, html .page-portfolio .card-content#two .img-and-text h3, html .page-portfolio .card-content#two .img-and-text p, html .page-portfolio .card-content#three .img-and-text h3, html .page-portfolio .card-content#three .img-and-text p {
+    text-align: left;
+    width: 100%;
+    margin-left: 15px;
+  }
+  /* line 873, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-portfolio .card-content#one .img-and-text p, html .page-portfolio .card-content#two .img-and-text p, html .page-portfolio .card-content#three .img-and-text p {
+    font-size: 180%;
+  }
+  /* line 880, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-contact {
+    margin: 40% 0;
+    font-size: 180%;
+  }
+  /* line 884, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-contact h3, html .page-contact p {
+    width: 90%;
+  }
+  /* line 888, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-contact h3 {
+    font-size: 200%;
+  }
+  /* line 891, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-contact h3 a {
+    font: 50% 'Lato', sans-serif;
+  }
+  /* line 896, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  html .page-contact form {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=../css/styles.map */

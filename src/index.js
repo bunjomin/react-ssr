@@ -8,13 +8,6 @@ import createStore from './helpers/createStore';
 
 const app = express();
 
-//The function passed below isn't 100% necessary -- only used for OAuth
-app.use('/api', proxy('http://react-ssr-api.herokuapp.com', {
-    proxyReqOptDecorator(opts) {
-        opts.headers['x-forwarded-host'] = 'localhost:3000'
-        return opts;
-    }
-}));
 app.use(express.static('public'));
 
 app.get('*', (req, res) => {

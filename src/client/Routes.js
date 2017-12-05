@@ -1,7 +1,8 @@
 import React from 'react';
 import HomePage from './pages/HomePage';
-import UsersListPage from './pages/UsersListPage';
-import AdminsListPage from './pages/AdminsListPage';
+import PortfolioPage from './pages/PortfolioPage';
+import ServicesPage from './pages/ServicesPage';
+import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
 import App from './App';
 
@@ -15,12 +16,16 @@ export default [
                 exact: true
             },
             {
-                ...UsersListPage,
-                path: '/users'
+                ...PortfolioPage,
+                path: '/portfolio',
             },
             {
-                ...AdminsListPage,
-                path: '/admins'
+                ...ServicesPage,
+                path: '/services',
+            },
+            {
+                ...ContactPage,
+                path: '/contact',
             },
             {
                 ...NotFoundPage
