@@ -55,6 +55,10 @@ class Home extends Component {
                     <meta property="og:type" content="website" />
                     <meta property="og:url" content="http://www.ben-harrington.com" />
                     <meta property="og:image" content="http://www.ben-harrington.com/imgs/b-logo.svg" />
+                    <meta property="og:image:type" content="image/jpeg" />
+                    <meta property="og:image:width" content="400" />
+                    <meta property="og:image:height" content="300" />
+                    <meta property="og:image:alt" content="A stylized capital B" />
                     <meta property="og:description" content="Front-end web developer and designer specializing in ReactJS" />
                 </Helmet>
                 <Transition in={!!show} timeout={duration}>
