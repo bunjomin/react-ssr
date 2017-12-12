@@ -31,7 +31,7 @@ textarea {
   .nav-wrapper {
     background: linear-gradient(45deg, #00bcd4, #00c7e1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    height: 10vh;
+    height: 100px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -91,7 +91,7 @@ textarea {
     margin-left: 21px;
     width: 30px;
     height: 18px;
-    background: no-repeat center center url("http://localhost:3000/imgs/003-interface.svg");
+    background: no-repeat center center url("http://ben-harrington.com/imgs/003-interface.svg");
     opacity: 0.6;
   }
   /* line 113, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
@@ -102,7 +102,7 @@ textarea {
     margin-left: 21px;
     width: 30px;
     height: 18px;
-    background: no-repeat center center url("http://localhost:3000/imgs/002-wrench.svg");
+    background: no-repeat center center url("http://ben-harrington.com/imgs/002-wrench.svg");
     opacity: 0.6;
   }
   /* line 127, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
@@ -113,7 +113,7 @@ textarea {
     margin-left: 21px;
     width: 30px;
     height: 18px;
-    background: no-repeat center center url("http://localhost:3000/imgs/001-mail.svg");
+    background: no-repeat center center url("http://ben-harrington.com/imgs/001-mail.svg");
     opacity: 0.6;
   }
   /* line 139, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
@@ -159,7 +159,7 @@ textarea {
   }
   /* line 183, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-portfolio #one.card-content {
-    background: no-repeat top right url("http://localhost:3000/imgs/bg_card-one-desaturated.jpg");
+    background: no-repeat top right url("http://ben-harrington.com/imgs/bg_card-one-desaturated.jpg");
     background-size: cover;
   }
   /* line 187, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
@@ -172,7 +172,7 @@ textarea {
   }
   /* line 196, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-portfolio #two.card-content {
-    background: no-repeat top right url("http://localhost:3000/imgs/bg_card-two-desaturated.jpg");
+    background: no-repeat top right url("http://ben-harrington.com/imgs/bg_card-two-desaturated.jpg");
     background-size: cover;
   }
   /* line 200, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
@@ -189,7 +189,7 @@ textarea {
   }
   /* line 213, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-portfolio #three.card-content {
-    background: url("http://localhost:3000/imgs/bg_keyboard-desaturated.jpg");
+    background: url("http://ben-harrington.com/imgs/bg_keyboard-desaturated.jpg");
     background-size: cover;
   }
   /* line 217, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
@@ -213,8 +213,7 @@ textarea {
     display: grid;
     grid-template-columns: 15% auto 15%;
     grid-template-rows: 25% 25%;
-    grid-row-gap: 400px;
-    grid-template-areas: "marg-l1 mid1 marg-r1" "marg-l2 mid2 marg-r2" "marg-l3 mid3 marg-r3";
+    grid-template-areas: "marg-l1 mid1 marg-r1" "marg-l2 mid2 marg-r2" "marg-l3 mid3 marg-r3" "marg-l4 mid4 marg-r4";
   }
   /* line 245, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-home .intro, .page-home .react-front-end, .page-home .about-me {
@@ -240,27 +239,29 @@ textarea {
   }
   /* line 267, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-home .intro {
-    grid-area: mid2;
-  }
-  /* line 271, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
-  .page-home .react-front-end {
     grid-area: mid3;
+    margin-bottom: 300px;
   }
-  /* line 275, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 272, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  .page-home .react-front-end {
+    grid-area: mid4;
+    margin-bottom: 300px;
+  }
+  /* line 277, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-home .about-me {
     grid-area: mid1;
   }
-  /* line 279, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 281, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-home a {
-    width: 20%;
-    height: 20%;
-    position: relative;
-    top: 40vh;
+    width: 200px;
+    height: 75px;
+    margin-bottom: 300px;
+    margin-top: 50px;
   }
-  /* line 285, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 287, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-home a button {
-    width: 100%;
-    height: 100%;
+    height: 75px;
+    width: 200px;
     border: none;
     border-radius: 10px;
     color: #eee;
@@ -268,21 +269,19 @@ textarea {
     font-weight: 400;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
-  /* line 297, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 299, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-home .link-services {
-    grid-area: mid1;
-    width: 20%;
-    left: 45%;
+    grid-area: mid2;
+    margin-left: 20%;
   }
-  /* line 302, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 303, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-home .link-services button {
     background: linear-gradient(45deg, #4caf50, #009688);
   }
-  /* line 307, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 308, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-home .link-contact {
-    grid-area: mid1;
-    width: 20%;
-    left: 10%;
+    grid-area: mid2;
+    margin-left: 60%;
   }
   /* line 312, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-home .link-contact button {
@@ -290,7 +289,7 @@ textarea {
   }
   /* line 317, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-home img#mountain {
-    grid-area: marg-l3;
+    grid-area: marg-l4;
     width: 90%;
     margin-left: 10%;
     align-self: center;
@@ -400,7 +399,7 @@ textarea {
   .nav-wrapper {
     background: linear-gradient(45deg, #00bcd4, #00c7e1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    height: 10vh;
+    height: 100px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -598,56 +597,7 @@ textarea {
   .page-home .about-me {
     grid-area: mid1;
   }
-  /* line 636, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
-  .page-home .about-me p button {
-    margin-top: 35px;
-    text-align: center;
-    width: 50%;
-    padding: 20px 0;
-    background: linear-gradient(45deg, #009688, #4caf50);
-    color: #eee;
-    font: 150% 'Lato', sans-serif;
-    font-weight: 400;
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  /* line 651, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
-  .page-home a {
-    width: 40%;
-    height: 20%;
-    position: relative;
-    top: 45vh;
-  }
-  /* line 657, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
-  .page-home a button {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 10px;
-    color: #eee;
-    font: 160% 'Lato', sans-serif;
-    font-weight: 400;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  /* line 669, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
-  .page-home .link-services {
-    grid-area: mid1;
-    left: 42%;
-  }
-  /* line 673, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
-  .page-home .link-services button {
-    background: linear-gradient(45deg, #4caf50, #009688);
-  }
-  /* line 678, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
-  .page-home .link-contact {
-    grid-area: mid1;
-    left: 0;
-  }
-  /* line 682, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
-  .page-home .link-contact button {
-    background: linear-gradient(45deg, #009688, #4caf50);
-  }
-  /* line 687, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 635, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-home img#mountain {
     grid-area: marg-l3;
     width: 90%;
@@ -655,13 +605,13 @@ textarea {
     align-self: center;
     justify-self: center;
   }
-  /* line 696, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 644, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-services {
     width: 100%;
     height: 150%;
     margin-top: 10%;
   }
-  /* line 701, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 649, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-services .card-serv {
     width: 55%;
     text-align: center;
@@ -671,45 +621,45 @@ textarea {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     padding: 60px 30px;
   }
-  /* line 710, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 658, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-services .card-serv h3, .page-services .card-serv p {
     color: #777;
   }
-  /* line 714, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 662, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-services .card-serv h3 {
     font: 400% 'Lato', sans-serif;
     font-weight: 100;
     color: #00c7e1;
   }
-  /* line 720, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 668, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-services .card-serv p {
     font: 130% 'Oswald', sans-serif;
     margin-top: 35px;
   }
-  /* line 727, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 675, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-contact {
     margin-top: 10%;
     margin-bottom: 10%;
     width: 100%;
   }
-  /* line 732, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 680, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-contact h3, .page-contact p {
     text-align: center;
     width: 60%;
     margin: auto;
   }
-  /* line 738, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 686, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-contact h3 {
     color: #00bcd4;
     font: 300% 'Lato', sans-serif;
     font-weight: 100;
   }
-  /* line 744, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 692, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-contact p {
     color: #777;
     font: 140% 'Oswald', sans-serif;
   }
-  /* line 749, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 697, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-contact form {
     width: 60%;
     margin: auto;
@@ -721,18 +671,18 @@ textarea {
     padding: 60px 60px;
     border-radius: 15px;
   }
-  /* line 760, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 708, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-contact form input {
     width: 100%;
     min-height: 5%;
     margin: 10px 0;
     padding: 15px 0;
   }
-  /* line 767, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 715, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-contact form textarea {
     min-height: 25%;
   }
-  /* line 771, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 719, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   .page-contact form .button-sub {
     margin: auto;
     margin-top: 25px;
@@ -745,79 +695,79 @@ textarea {
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
-  /* line 786, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 734, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html {
     font-size: 160%;
     width: 100%;
   }
-  /* line 790, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 738, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .nav-wrapper {
-    height: 20vh;
+    height: 300px;
   }
-  /* line 793, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 741, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .nav-wrapper .nav-container {
     grid-template-areas: "brand" "navbuttons";
     grid-template-columns: 100%;
   }
-  /* line 799, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 747, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .nav-wrapper .nav-container h1 {
     font-size: 100%;
   }
-  /* line 804, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 752, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .nav-wrapper .nav-container h1 .home-logo img {
     width: 200px;
   }
-  /* line 810, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 758, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .nav-wrapper .nav-container .nav-buttons {
     justify-self: center;
   }
-  /* line 814, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 762, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .nav-wrapper .nav-container ul {
     margin-top: -60px;
     margin-left: 10px;
     justify-self: center;
   }
-  /* line 819, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 767, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .nav-wrapper .nav-container ul li {
     margin: 0;
     padding: 0 60px;
     font-size: 120%;
   }
-  /* line 827, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 775, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .nav-wrapper .nav-container ul [id='1']::before, html .nav-wrapper .nav-container ul [id='2']::before, html .nav-wrapper .nav-container ul [id='3']::before {
     width: 100px;
     height: 40px;
     margin-top: 50px;
   }
-  /* line 837, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 785, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-home {
     margin-top: 40%;
     width: 100%;
   }
-  /* line 841, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 789, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-home img#mountain {
     display: none;
   }
-  /* line 846, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 794, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-services {
     margin-top: 40%;
   }
-  /* line 849, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 797, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-services .card-serv {
     width: 80%;
     margin-top: 15%;
   }
-  /* line 853, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 801, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-services .card-serv p {
     font-size: 180%;
   }
-  /* line 859, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 807, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-portfolio {
     margin-top: 35%;
     margin-bottom: 20%;
     width: 100%;
   }
-  /* line 864, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 812, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-portfolio .card-content#one, html .page-portfolio .card-content#two, html .page-portfolio .card-content#three {
     height: auto;
     width: 100%;
@@ -826,44 +776,44 @@ textarea {
     background: none;
     background-color: #eee;
   }
-  /* line 872, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 820, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-portfolio .card-content#one .img-and-text, html .page-portfolio .card-content#two .img-and-text, html .page-portfolio .card-content#three .img-and-text {
     width: 100%;
     text-align: left;
     margin-right: 0;
   }
-  /* line 877, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 825, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-portfolio .card-content#one .img-and-text h3, html .page-portfolio .card-content#two .img-and-text h3, html .page-portfolio .card-content#three .img-and-text h3 {
     font-size: 400%;
   }
-  /* line 881, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 829, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-portfolio .card-content#one .img-and-text h3, html .page-portfolio .card-content#one .img-and-text p, html .page-portfolio .card-content#two .img-and-text h3, html .page-portfolio .card-content#two .img-and-text p, html .page-portfolio .card-content#three .img-and-text h3, html .page-portfolio .card-content#three .img-and-text p {
     text-align: left;
     width: 100%;
     margin-left: 15px;
   }
-  /* line 887, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 835, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-portfolio .card-content#one .img-and-text p, html .page-portfolio .card-content#two .img-and-text p, html .page-portfolio .card-content#three .img-and-text p {
     font-size: 180%;
   }
-  /* line 894, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 842, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-contact {
     margin: 40% 0;
     font-size: 180%;
   }
-  /* line 898, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 846, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-contact h3, html .page-contact p {
     width: 90%;
   }
-  /* line 902, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 850, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-contact h3 {
     font-size: 200%;
   }
-  /* line 905, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 853, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-contact h3 a {
     font: 50% 'Lato', sans-serif;
   }
-  /* line 910, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
+  /* line 858, D:/web dev/ReactSSRCasts-master/myServer/public/styles/scss/styles.scss */
   html .page-contact form {
     width: 80%;
   }
