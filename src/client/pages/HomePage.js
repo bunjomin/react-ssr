@@ -90,8 +90,8 @@ class Home extends Component {
                             </Transition>
                         </div>
                         )}</Transition>
-                        <button className='btn-get-started' onClick={(e) => { window.location.href = 'http://www.ben-harrington.com/contact'} }>Get Started</button>
-                        <button className='btn-learn-more' onClick={(e) => { window.location.href = 'http://www.ben-harrington.com/services'} }>Learn More</button>
+                        <Link to='/contact' className='link-contact'><button className='btn-get-started'>Get Started</button></Link>
+                        <Link to='/services'className='link-services'><button className='btn-learn-more'>Learn More</button></Link>
                         <img src='imgs/mountain.svg' id='mountain' />
 
                         <div className='react-front-end'>

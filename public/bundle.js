@@ -39161,18 +39161,22 @@ var Home = function (_Component) {
                                 }
                             ),
                             _react2.default.createElement(
-                                'button',
-                                { className: 'btn-get-started', onClick: function onClick(e) {
-                                        window.location.href = 'http://www.ben-harrington.com/contact';
-                                    } },
-                                'Get Started'
+                                _reactRouterDom.Link,
+                                { to: '/contact', className: 'link-contact' },
+                                _react2.default.createElement(
+                                    'button',
+                                    { className: 'btn-get-started' },
+                                    'Get Started'
+                                )
                             ),
                             _react2.default.createElement(
-                                'button',
-                                { className: 'btn-learn-more', onClick: function onClick(e) {
-                                        window.location.href = 'http://www.ben-harrington.com/services';
-                                    } },
-                                'Learn More'
+                                _reactRouterDom.Link,
+                                { to: '/services', className: 'link-services' },
+                                _react2.default.createElement(
+                                    'button',
+                                    { className: 'btn-learn-more' },
+                                    'Learn More'
+                                )
                             ),
                             _react2.default.createElement('img', { src: 'imgs/mountain.svg', id: 'mountain' }),
                             _react2.default.createElement(
