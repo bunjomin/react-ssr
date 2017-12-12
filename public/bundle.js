@@ -39117,6 +39117,10 @@ var Home = function (_Component) {
                     _react2.default.createElement('meta', { property: 'og:type', content: 'website' }),
                     _react2.default.createElement('meta', { property: 'og:url', content: 'http://www.ben-harrington.com' }),
                     _react2.default.createElement('meta', { property: 'og:image', content: 'http://www.ben-harrington.com/imgs/b-logo.svg' }),
+                    _react2.default.createElement('meta', { property: 'og:image:type', content: 'image/jpeg' }),
+                    _react2.default.createElement('meta', { property: 'og:image:width', content: '400' }),
+                    _react2.default.createElement('meta', { property: 'og:image:height', content: '300' }),
+                    _react2.default.createElement('meta', { property: 'og:image:alt', content: 'A stylized capital B' }),
                     _react2.default.createElement('meta', { property: 'og:description', content: 'Front-end web developer and designer specializing in ReactJS' })
                 ),
                 _react2.default.createElement(
