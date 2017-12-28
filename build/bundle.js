@@ -409,7 +409,7 @@ var Home = function (_Component) {
                                                     _react2.default.createElement(
                                                         'p',
                                                         null,
-                                                        'My name is Ben Harrington, and I\'ve tinkered with web development for as long as I can remember, but started taking it seriously in Summer 2017. I consider myself knowledgable in HTML, CSS, JavaScript, Node, React, Redux, Angular, Vue, and Meteor.',
+                                                        'My name is Ben Harrington, and I\'ve tinkered with web development for as long as I can remember, but started taking it seriously in Summer 2017. I consider myself knowledgeable in HTML, CSS, JavaScript, Node, React, Redux, Angular, Vue, and Meteor.',
                                                         _react2.default.createElement('br', null),
                                                         _react2.default.createElement('br', null),
                                                         'Let me help you create a slick website.',
